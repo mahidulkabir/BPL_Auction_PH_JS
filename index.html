@@ -1,11 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BPL Auction</title>
-</head>
-<body>
-    
-</body>
+    <!-- tailwind and daisy plugin -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- css file insertion  -->
+    <link rel="stylesheet" href="./styles/first.css" />
+  </head>
+  <body>
+    <header
+      class="flex flex-col lg:flex-row justify-evenly items-center bg-slate-300 py-8 text-2xl"
+    >
+      <div class="font-bold">
+        Budget: <span class="text-orange-800"> 2500</span> $
+      </div>
+      <div class="font-bold">
+        Cost: <span class="text-orange-800"> 0</span> $
+      </div>
+      <div class="font-bold">
+        Player Left: <span class="text-orange-800"> 6</span>
+      </div>
+    </header>
+    <main class="container mx-auto my-20">
+      <!-- section for main  -->
+      <section class="flex  flex-col lg:flex-row">
+        <!-- left side  -->
+        <!-- cards container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <!-- card 1 -->
+          <div class="card bg-green-800 text-primary-content w-96 mx-auto">
+            <div class="card-body">
+              <h2 class="text-2xl text-orange-300 font-bold">Tamim Iqbal</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, commodi?
+              </p>
+              <h3 class="card-title"> Price :<span  class="text-orange-500 font-bold">300</span> $</h3>
+              <h3 class="card-title"> Category : <span  class="text-orange-500 font-bold">BAT</span> </h3>
+              <div class="card-actions justify-end">
+                <button class="btn">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+            <!-- card 2 -->
+          <div class="card bg-green-800 text-primary-content w-96 mx-auto">
+            <div class="card-body">
+              <h2 class="text-2xl text-orange-300 font-bold">Shakib Al Hasan</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, commodi?
+              </p>
+              <h3 class="card-title"> Price :<span  class="text-orange-500 font-bold">300</span> $</h3>
+              <h3 class="card-title"> Category : <span  class="text-orange-500 font-bold">ALL</span> </h3>
+              <div class="card-actions justify-end">
+                <button class="btn">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+            <!-- card 3 -->
+          <div class="card bg-green-800 text-primary-content w-96 mx-auto">
+            <div class="card-body">
+              <h2 class="text-2xl text-orange-300 font-bold">Mushfik</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, commodi?
+              </p>
+              <h3 class="card-title"> Price :<span  class="text-orange-500 font-bold">200</span> $</h3>
+              <h3 class="card-title"> Category : <span  class="text-orange-500 font-bold">BAT</span> </h3>
+              <div class="card-actions justify-end">
+                <button class="btn">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+            <!-- card 4 -->
+          <div class="card bg-green-800 text-primary-content w-96 mx-auto">
+            <div class="card-body">
+              <h2 class="text-2xl text-orange-300 font-bold">Liton Das</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, commodi?
+              </p>
+              <h3 class="card-title"> Price :<span  class="text-orange-500 font-bold">300</span> $</h3>
+              <h3 class="card-title"> Category : <span  class="text-orange-500 font-bold">BAT</span> </h3>
+              <div class="card-actions justify-end">
+                <button class="btn">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+            <!-- card 5 -->
+          <div class="card bg-green-800 text-primary-content w-96 mx-auto">
+            <div class="card-body">
+              <h2 class="text-2xl text-orange-300 font-bold">Mustafiz</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, commodi?
+              </p>
+              <h3 class="card-title"> Price :<span  class="text-orange-500 font-bold">400</span> $</h3>
+              <h3 class="card-title"> Category : <span  class="text-orange-500 font-bold">BWL</span> </h3>
+              <div class="card-actions justify-end">
+                <button class="btn">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+            <!-- card 6 -->
+          <div class="card bg-green-800 text-primary-content w-96 mx-auto">
+            <div class="card-body">
+              <h2 class="text-2xl text-orange-300 font-bold">Taskin Ahmed</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, commodi?
+              </p>
+              <h3 class="card-title"> Price :<span  class="text-orange-500 font-bold">300</span> $</h3>
+              <h3 class="card-title"> Category : <span  class="text-orange-500 font-bold">BWL</span> </h3>
+              <div class="card-actions justify-end">
+                <button class="btn">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+            <!-- card 7 -->
+          <div class="card bg-green-800 text-primary-content w-96 mx-auto">
+            <div class="card-body">
+              <h2 class="text-2xl text-orange-300 font-bold">Saifuddin</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, commodi?
+              </p>
+              <h3 class="card-title"> Price :<span  class="text-orange-500 font-bold">200</span> $</h3>
+              <h3 class="card-title"> Category : <span  class="text-orange-500 font-bold">ALL</span> </h3>
+              <div class="card-actions justify-end">
+                <button class="btn">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+            <!-- card 8 -->
+          <div class="card bg-green-800 text-primary-content w-96 mx-auto">
+            <div class="card-body">
+              <h2 class="text-2xl text-orange-300 font-bold">Miraz</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, commodi?
+              </p>
+              <h3 class="card-title"> Price :<span  class="text-orange-500 font-bold">400</span> $</h3>
+              <h3 class="card-title"> Category : <span  class="text-orange-500 font-bold">ALL</span> </h3>
+              <div class="card-actions justify-end">
+                <button class="btn">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right side  -->
+
+        <div>
+            <h1 class=" text-3xl">My Cart </h1>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="./script/script.js"></script>
+  </body>
 </html>
