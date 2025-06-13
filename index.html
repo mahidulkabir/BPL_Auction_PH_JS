@@ -19,7 +19,7 @@
     <header>
       <!-- navbar section  -->
       <nav>
-        <div class="navbar bg-[#DDDDDD] shadow-sm mb-8">
+        <div class="navbar bg-[#2A4759] shadow-sm mb-8 text-orange-400 ">
           <div class="navbar-start">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
@@ -125,7 +125,7 @@
                 Ducimus, commodi?
               </p>
               <h3 class="card-title">
-                Price :<span class="text-orange-500 font-bold">300</span> $
+                Price :<span class="text-orange-500 font-bold">400</span> $
               </h3>
               <h3 class="card-title">
                 Category : <span class="text-orange-500 font-bold">BAT</span>
@@ -149,7 +149,7 @@
                 Ducimus, commodi?
               </p>
               <h3 class="card-title">
-                Price :<span class="text-orange-500 font-bold">300</span> $
+                Price :<span class="text-orange-500 font-bold">400</span> $
               </h3>
               <h3 class="card-title">
                 Category : <span class="text-orange-500 font-bold">ALL</span>
@@ -171,7 +171,7 @@
                 Ducimus, commodi?
               </p>
               <h3 class="card-title">
-                Price :<span class="text-orange-500 font-bold">200</span> $
+                Price :<span class="text-orange-500 font-bold">350</span> $
               </h3>
               <h3 class="card-title">
                 Category : <span class="text-orange-500 font-bold">BAT</span>
@@ -193,7 +193,7 @@
                 Ducimus, commodi?
               </p>
               <h3 class="card-title">
-                Price :<span class="text-orange-500 font-bold">300</span> $
+                Price :<span class="text-orange-500 font-bold">350</span> $
               </h3>
               <h3 class="card-title">
                 Category : <span class="text-orange-500 font-bold">BAT</span>
@@ -215,7 +215,7 @@
                 Ducimus, commodi?
               </p>
               <h3 class="card-title">
-                Price :<span class="text-orange-500 font-bold">400</span> $
+                Price :<span class="text-orange-500 font-bold">450</span> $
               </h3>
               <h3 class="card-title">
                 Category : <span class="text-orange-500 font-bold">BWL</span>
@@ -259,7 +259,7 @@
                 Ducimus, commodi?
               </p>
               <h3 class="card-title">
-                Price :<span class="text-orange-500 font-bold">200</span> $
+                Price :<span class="text-orange-500 font-bold">370</span> $
               </h3>
               <h3 class="card-title">
                 Category : <span class="text-orange-500 font-bold">ALL</span>
@@ -281,7 +281,7 @@
                 Ducimus, commodi?
               </p>
               <h3 class="card-title">
-                Price :<span class="text-orange-500 font-bold">400</span> $
+                Price :<span class="text-orange-500 font-bold">450</span> $
               </h3>
               <h3 class="card-title">
                 Category : <span class="text-orange-500 font-bold">ALL</span>
@@ -299,9 +299,9 @@
             class="p-4 bg-[#2A4759] text-white rounded-md"
             style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
           >
-            <h1 class="text-3xl font-bold text-center">My Cart</h1>
+            <h1 class="text-3xl font-bold text-orange-300  text-center">My Cart</h1>
             <hr class="my-5 border-gray-200" />
-            <div class="flex justify-evenly font-bold text-orange-400">
+            <div class="flex justify-between font-bold text-orange-400">
               <p>Name</p>
               <p>Category</p>
               <p>Price</p>
@@ -312,8 +312,8 @@
              </div>
             <hr class="my-5 border-gray-200" />
             <div>
-              <h1 class="font-bold text-center text-xl">
-                Total Cost : <span> 0</span> $
+              <h1 class="text-orange-300 font-bold text-center text-xl">
+                Total Cost : <span id="total-cost" class="text-orange-400 font-bold"> 0</span> $
               </h1>
             </div>
             <hr class="my-5 border-gray-200" />
@@ -330,8 +330,8 @@
             <hr class="my-5 border-gray-200" />
 
             <div>
-              <h1 class="font-bold text-center text-xl">
-                Grand Total Cost : <span> 0</span> $
+              <h1 class="text-orange-300 font-bold text-center text-xl">
+                Grand Total Cost : <span id="grand-cost" class="text-orange-400 font-bold"> 0</span> $
               </h1>
             </div>
           </div>
@@ -376,7 +376,7 @@
         </fieldset>
       </form>
     </footer>
-
+    <script src="./script/utility.js"></script>
     <script src="./script/script.js"></script>
   </body>
 </html>

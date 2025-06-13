@@ -9,7 +9,8 @@ btn.addEventListener("click", function(event){
     // creatng p tags for appending list 
     const selectedPlayerContainer = document.getElementById("selected-player-container");
     const divForPlayers = document.createElement('div');
-    divForPlayers.classList.add("selected-players")
+    divForPlayers.classList.add("flex");
+    divForPlayers.classList.add("justify-between");
     const pName = document.createElement("p");
     pName.innerText = playerName;
     const pPrice = document.createElement("p");
@@ -22,5 +23,7 @@ btn.addEventListener("click", function(event){
     divForPlayers.appendChild(pPrice);
 
     selectedPlayerContainer.appendChild(divForPlayers);
+    // total cost calculation part 
+    totalCostCalculation(playerPrice);
 })
 }

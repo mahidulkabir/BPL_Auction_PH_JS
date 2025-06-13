@@ -3,3 +3,9 @@ function getConvertedValue(id){
     const convertedIdName = parseInt(idName);
     return convertedIdName;
 }
+
+function totalCostCalculation(priceOfPlayer){
+   const primaryPrice =  getConvertedValue("total-cost");
+   document.getElementById("total-cost").innerText = primaryPrice + parseInt(priceOfPlayer);
+
+}
