@@ -5,7 +5,26 @@ btn.addEventListener("click", function(event){
     const playerName = event.target.parentNode.parentNode.childNodes[1].innerText;
     const playerPrice = event.target.parentNode.parentNode.childNodes[5].childNodes[1].innerText;
     const playerCategory = event.target.parentNode.parentNode.childNodes[7].childNodes[1].innerText;
+
+    // cart condition 
+
+    const cartCount = getConvertedValue("cart");
+    if(cartCount === 6){
+        alert("You Can't Select More Than Six Players");
+        return;
+    }
     
+    event.target.setAttribute("disabled", true);
+    // banner section formating
+    const budget = getConvertedValue("budget");
+    document.getElementById("budget").innerText = budget - playerPrice;
+    const cart = getConvertedValue("cart");
+    document.getElementById("cart").innerText = cart+1;
+    const left = getConvertedValue("left");
+    document.getElementById("left").innerText = left-1;
+
+
+
     // creatng p tags for appending list 
     const selectedPlayerContainer = document.getElementById("selected-player-container");
     const divForPlayers = document.createElement('div');
@@ -36,8 +55,13 @@ function updateGrandCost(codeAdded){
 if(codeAdded){
     if(document.getElementById("coupon-code").value === "love420"){
         const discount = getConvertedValue("total-cost")* .2;
+        const budget = getConvertedValue("budget");
+        document.getElementById("budget").innerText = budget + discount;
         const afterDiscountPrice = getConvertedValue("total-cost") - discount;
         document.getElementById("grand-cost").innerText = afterDiscountPrice;
+            event.target.setAttribute("disabled", true);
+
+        return;
 
     }
      else{
