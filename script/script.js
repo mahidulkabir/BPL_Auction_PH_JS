@@ -25,5 +25,27 @@ btn.addEventListener("click", function(event){
     selectedPlayerContainer.appendChild(divForPlayers);
     // total cost calculation part 
     totalCostCalculation(playerPrice);
+    // update grand cost 
+    updateGrandCost();
 })
+}
+
+// update grand cost with coupon code 
+
+function updateGrandCost(codeAdded){
+if(codeAdded){
+    if(document.getElementById("coupon-code").value === "love420"){
+        const discount = getConvertedValue("total-cost")* .2;
+        const afterDiscountPrice = getConvertedValue("total-cost") - discount;
+        document.getElementById("grand-cost").innerText = afterDiscountPrice;
+
+    }
+     else{
+        alert("Provide a valid coupon code")
+     }
+}
+else{
+     const totalCost = getConvertedValue("total-cost");
+   document.getElementById("grand-cost").innerText = totalCost;
+}
 }
